@@ -23,7 +23,7 @@ Don't forget to set your working directory (Session -> Set Working Directory)!
 Read in the SENIC data. Remove the last (extra) column.
 
 ```{r}
-senicData <- read.table("SENIC.csv", header=TRUE, row.names=1, sep=",",
+senicData <- read.table("C:/Users/Larry/OneDrive/Documents/GitHub/Test02/SENIC.csv", header=TRUE, row.names=1, sep=",",
                         colClasses=c(rep("numeric",7),rep("factor",2),
                         rep("numeric",9), rep("factor",2)))
 senicData <- senicData[,-ncol(senicData)]
@@ -31,7 +31,7 @@ senicData <- senicData[,-ncol(senicData)]
 
 Read in the Lending Club data.  The data will be in a data frame called lendingData.
 ```{r}
-load("lendingData.rda")
+load("C:/Users/Larry/OneDrive/Documents/GitHub/Test02/lendingData.rda")
 ```
 
 ## Univariate Visualizations
